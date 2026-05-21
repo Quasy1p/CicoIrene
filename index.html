@@ -1,38 +1,62 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Sezioni a Schermata</title>
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity; /* scroll morbido */
-    overflow-y: scroll;
-  }
-
-  section {
-    height: 100vh; /* una schermata */
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: #ffffff;
-  }
-
-  .s1 { background: #6ba96b; } /* verde 1 */
-  .s2 { background: #4f8f4f; } /* verde 2 */
-  .s3 { background: #3b6f3b; } /* verde 3 */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="main">
+        <div class="mainTitle">
+            <h1>
+                <span class="colorDelirium">irene</span> e <span class="colorDelirium2">giacomo</span>
+            </h1>
+            <h2>
+                sono felici di invitarvi <br> al loro <span class="colorDelirium3 bigger">matrimonio</span>
+            </h2>
+            <a href="#content"><div class="triangolo"></div></a>
+        </div>
+        </section>
+        <section class="main mainDetails">
+        <div id="content" class="mainContent">
+            <div class="row">
+                <div class="question color01">Quando</div>
+                <div class="answer">01/08/2026 - 12,30</div>
+            </div>
+            <div class="row">
+                <div class="question color02">Dove</div>
+                <div class="answer">Rifigio valbella (lessina) <a href="https://maps.google.com/?q=Rifugio+Valbella+Lessinia" target="_blank"><div class="BtnTriangolo border-color02"></div></a></div>
+            </div>
+            <div class="row">
+                <div class="question color03">Come</div>
+                <div class="answer">Come vuoi, elegante, casual (nudo/a)</div>
+            </div>
+            <div class="row">
+                <div class="question color04">Come mai</div>
+                <div class="answer">ottima domanda, ne possiamo parlare alla festa</div>
+            </div>
+            <div class="row">
+                <div class="question color05">Cosa</div>
+                <div class="answer">un contributo per il viaggio di nozze <a href="https://docs.google.com/forms/d/e/DEMO_LINK_DA_SOSTITUIRE/viewform" target="_blank"><div class="BtnTriangolo border-color05"></div></a></div>
+            </div>
+        </div>
 
-<section class="s1">Sezione 1</section>
-<section class="s2">Sezione 2</section>
-<section class="s3">Sezione 3</section>
+        <div class="mainContent">
+            <div class="textWall">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus consectetur nibh eu dictum. Etiam at eros sollicitudin, malesuada diam eget, mollis magna. Mauris in metus iaculis nisi congue accumsan ut vel odio. Praesent ac pellentesque velit, nec gravida justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec metus nisl, varius non tortor sit amet, placerat elementum dui. Aliquam erat volutpat.
 
+Phasellus iaculis egestas lacus sit amet malesuada. Phasellus ut tristique ante. Phasellus id felis id lectus ullamcorper facilisis. Donec a feugiat arcu. Nunc maximus lacus id eros ultricies, ut pharetra nulla egestas. Fusce vitae sollicitudin ipsum. Integer pretium nec metus eu sollicitudin. Donec ac blandit metus, non vehicula erat. Cras odio dolor, consectetur a congue in, venenatis sed elit. Quisque a accumsan ligula, eget vehicula tortor. Phasellus sed nibh eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Aenean aliquam lacus arcu, nec laoreet tortor feugiat et.
+
+In urna augue, vestibulum non nibh ut, lobortis molestie nisl. Integer sit amet elementum sem. Cras aliquam odio vitae mauris facilisis consequat. Sed in blandit nisi. Suspendisse posuere dui eget velit bibendum varius. Ut euismod, lacus et lobortis tempus, purus tellus ultricies metus, sed dictum tellus magna ut nisi. Integer volutpat ut metus vel lobortis.
+
+Nullam commodo viverra auctor. Nulla aliquam ullamcorper purus, a pellentesque nunc efficitur non. Suspendisse at sem eros. In non augue porta, blandit elit sed, lobortis diam. Nulla consectetur consectetur mauris. Nunc nec libero nisl. Phasellus varius efficitur libero sit amet tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Vivamus ut pharetra elit. Duis quis pulvinar ligula, at commodo arcu. Aliquam est justo, aliquet id diam nec, pretium cursus ligula. Duis ac elementum turpis. Sed aliquam ultrices congue. Nullam id aliquet magna. In vitae malesuada nulla. Suspendisse varius enim ut ex sodales, id volutpat ligula imperdiet. Vestibulum sed commodo tellus. Quisque ac malesuada sapien. Duis in velit in sapien mollis lobortis.
+            </div>
+            
+        </div>
+    </section>
+    
 </body>
 </html>
