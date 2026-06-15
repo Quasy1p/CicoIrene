@@ -21,6 +21,11 @@ body {
     padding: 0;
 }
 
+a {
+    /* text-decoration: none; */
+    color: #fff;
+}
+
 body {
     font-family: 'HeadOH', sans-serif;
     background-image: url('img/000298130032_BRUTAL.jpg');
@@ -227,10 +232,36 @@ body {
     font-size: 30px;
 }
 
+.buttons .mainContent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.buttons .mainContent a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    max-width: 45%;
+}
+
+.buttons .mainContent a h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.buttons .mainContent .note {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
 @media (max-width: 850px) {
-    .main{
+    .main {
         height: 100vh;
-        
+
         padding-top: 0;
     }
 
@@ -252,8 +283,8 @@ body {
     }
 
     .mainContent:last-child {
-    margin-bottom: 0;
-}
+        margin-bottom: 0;
+    }
 
     .mainTitle {
         width: max-content;
@@ -303,6 +334,20 @@ body {
         bottom: 0;
         top: 0px;
         right: -22px;
+    }
+
+    .main.buttons{
+        margin-bottom: 10%;
+    }
+
+    .buttons .mainContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons .mainContent a {
+        width: 100%;
+        max-width: 100%;
     }
 
     /* .triangolo {
